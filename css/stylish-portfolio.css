@@ -1,0 +1,364 @@
+/*!
+ * Start Bootstrap - Stylish Portfolio Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Global Styles */
+
+body {
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin-top: 60px;
+    background-image: url("../img/uneleap2.jpg");
+    background-repeat: none;
+    background-size: 100% 1050px;
+}
+
+/*Splash page start*/
+.content-container-login{
+    height:400px;
+    width:50%;
+    margin: 0 auto;
+}
+.splashvideo{
+    margin:0 auto;
+    width:20%;
+    display:block;
+    float:left;
+    border-right:1px solid #fff;
+}
+form{
+    width:490px !important;
+}
+.password{
+    width:180px !important;
+}
+.login{
+    padding-top:12.5px;
+    margin-left: -25px;
+    float:left;
+}
+.login-input{
+    width:200px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    margin-right: 5px;
+    padding: 8px;
+    clear: both;
+}
+.submitbuttons{
+    clear:both;
+    padding-top: 8px;
+    width:100%;
+    margin-left: -3px;
+}
+.loginbutton{
+  background: #B22222 !important;
+  width:200px !important;
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 50px 10px 50px;
+  text-decoration: none;
+  border: solid #B22222;
+}
+.submit{
+    height: 50px;
+    width: 45%;
+    height:auto 0;
+}
+.register{
+    margin-left: 8px;
+    height: 40px;
+    height: auto 0;
+}
+.loginbottom{
+    width:250px;
+    margin-left: 32px;
+}
+.remember-label{
+    color:white;
+    float:left;
+    margin-left: 20px;
+    display: block;
+}
+.tml-action-links{
+    list-style-type: none;
+    display: block;
+    float:right;
+}
+.tml-action-links a{
+    color:white;
+}
+.tml-action-links a:hover{
+    color:blue;
+}
+.text-vertical-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.text-vertical-center h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 4.5em;
+    font-weight: 700;
+}
+.fiyom{
+    position: absolute;
+    bottom: 20px;
+    right:15px;
+    height: 40px;
+}
+.whitehelp{
+    position: absolute;
+    bottom: 20px;
+    right: 130px;
+    height:45px;
+}
+.iosstore{
+    position: absolute;
+    bottom: 20px;
+    left:15px;
+    height:45px;
+}
+.googleplay{
+    position: absolute;
+    bottom:20px;
+    left:65px;
+    height: 45px;
+}
+/* Splash page end */
+
+/* Logged in page start */
+
+.loggedinheader{
+    width:100%;
+    background-color: black;
+    z-index: 90001;
+    height:50px;
+    position: absolute;
+    top:0;
+}
+
+.icon_head{
+    position: absolute;
+    left:10px;
+    top:2px;
+}
+.search_icon{
+    position: absolute;
+    height:40px;
+    right:55px;
+    top:5px;
+}
+
+.calender{
+    margin: 0 auto;
+}
+
+
+/* logged in page end */
+
+hr.small {
+    max-width: 100px;
+}
+
+/* Side Menu */
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    margin-right: -250px;
+    overflow-y: auto;
+    background: #222;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 55px;
+    font-size: 18px;
+    line-height: 55px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+#menu-toggle {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+#sidebar-wrapper.active {
+    right: 250px;
+    width: 250px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.toggle {
+    margin: 5px 5px 0 0;
+}
+/* Header */
+
+.header {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../img/bg.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* About */
+
+.about {
+    padding: 50px 0;
+}
+
+/* Services */
+
+.services {
+    padding: 50px 0;
+}
+
+.service-item {
+    margin-bottom: 30px;
+}
+
+/* Callout */
+
+.callout {
+    display: table;
+    width: 100%;
+    height: 400px;
+    color: #fff;
+    background: url(../img/callout.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* Portfolio */
+
+.portfolio {
+    padding: 50px 0;
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+.img-portfolio {
+    margin: 0 auto;
+}
+
+.img-portfolio:hover {
+    opacity: 0.8;
+}
+
+/* Call to Action */
+
+.call-to-action {
+    padding: 50px 0;
+}
+
+.call-to-action .btn {
+    margin: 10px;
+}
+
+/* Map */
+
+.map {
+    height: 500px;
+}
+
+@media(max-width:768px) {
+    .map {
+        height: 75%;
+    }
+}
+
+/* Footer */
+
+footer {
+    padding: 100px 0;
+}
+/* Animation */
+
+.no-js #loader {
+    display: none;
+}
+.js #loader {
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 0; }
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(../img/splashscreen.png) center no-repeat #fff;
+}
+

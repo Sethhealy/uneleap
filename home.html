@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Home - Uneleap</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <header class="loggedinheader">
+    <a href="home.html"> <img class="icon_head" src="img/icon_head.png" alt=""></a>
+
+    <!-- Search icon -->
+    <img class="search_icon" src="img/search_icon.png" alt="">
+    <!-- Navigation -->
+        <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+        <nav id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+                <li class="sidebar-brand">
+                    <a href="#top"  onclick = $("#menu-close").click(); >Start Bootstrap</a>
+                </li>
+                <li>
+                    <a href="#top" onclick = $("#menu-close").click(); >Home</a>
+                </li>
+                <li>
+                    <a href="#about" onclick = $("#menu-close").click(); >About</a>
+                </li>
+                <li>
+                    <a href="#services" onclick = $("#menu-close").click(); >Services</a>
+                </li>
+                <li>
+                    <a href="#portfolio" onclick = $("#menu-close").click(); >Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="calender">
+        <iframe src="https://www.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=tbfl8jrb32me03gc8u6bk937hk%40group.calendar.google.com&amp;color=%23865A5A&amp;ctz=America%2FNew_York" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <footer>
+        <a href="#"><img class="iosstore" src="img/blackiphone.png" alt=""></a>
+        <a href="#"><img class="googleplay" src="img/googleplay.png" alt=""></a>
+        <img class="whitehelp" src="img/helpwhite.png" alt="">
+        <a href="http://fiyom.uneleap.com/"><img class="fiyom" src="img/uneleap-logos-fiyom.png" alt=""></a>
+    </footer>
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+
+</body>
+
+</html>
